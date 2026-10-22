@@ -246,7 +246,7 @@
   .hc.dark .price s{color:#8b8785}
   .early{display:inline-block;align-self:flex-start;font-size:13px;font-weight:800;color:#fff;background:var(--red);border-radius:999px;padding:7px 12px;margin:-6px 0 16px;animation:pulse 2s ease-in-out infinite}
   #practicum{scroll-margin-top:20px}
-  #practicum:target{animation:spot 2.4s ease-out}
+  #practicum.spot{animation:spot 2.4s ease-out}
   @keyframes spot{0%,30%{box-shadow:0 0 0 4px var(--red),var(--shadow-h)}100%{box-shadow:var(--shadow)}}
 
   /* about */
@@ -332,7 +332,7 @@
     </div>
     <div class="journey rv" id="journey">
       <div class="js-step"><div class="ic">1</div><div class="tx"><b>Видит твой Reels или сторис</b><span>Контент, который нейросеть помогла придумать и написать</span></div></div>
-      <div class="js-step"><div class="ic">2</div><div class="tx"><b>Заходит в упакованный профиль</b><span>Шапка, актуальные и закрепы сразу объясняют, кто ты и чем полезна</span></div></div>
+      <div class="js-step"><div class="ic">2</div><div class="tx"><b>Заходит в упакованный профиль</b><span>Шапка, актуальные и закрепы сразу объясняют, кто ты и чем можешь помочь</span></div></div>
       <div class="js-step"><div class="ic">3</div><div class="tx"><b>Переходит по ссылке</b><span>Страница услуги или тест: что ты делаешь, сколько стоит, как записаться</span></div></div>
       <div class="js-step"><div class="ic">4</div><div class="tx"><b>Оставляет заявку</b><span>Без долгой переписки «а сколько стоит?» — всё уже понятно</span></div></div>
       <div class="js-step"><div class="ic">5</div><div class="tx"><b>Тебе приходит уведомление</b><span>Бот в Telegram сообщает, кто пришёл и что ему нужно</span></div></div>
@@ -381,7 +381,7 @@
       <div class="hc">
         <span class="lbl">Лично</span>
         <h3>Настройка под ключ</h3>
-        <p><b>Не хочешь разбираться в нейросетях сама?</b> Я всё настрою под ключ: соберу ассистента или агента под твои задачи и простым языком объясню, как с ним общаться. От тебя — минимум времени, на выходе — готовый помощник, который работает на тебя:</p>
+        <p><b>Не хочешь разбираться в нейросетях самостоятельно?</b> Я всё настрою под ключ: соберу ассистента или агента под твои задачи и простым языком объясню, как с ним общаться. От тебя — минимум времени, на выходе — готовый помощник, который работает на тебя:</p>
         <ul class="mini"><li>контент и контент-план</li><li>страница услуги или сайт</li><li>бот и уведомления о заявках</li><li>автоматизация публикаций</li><li>маркетинговая стратегия</li></ul>
         <div class="price">от 10 000 ₽</div>
         <div class="how"><b>Как проходит</b>
@@ -395,7 +395,7 @@
         <span class="lbl">Вместе · каждый месяц</span>
         <div class="when light"><i></i>Старт 2 ноября</div>
         <h3>Контент-дом</h3>
-        <p>Пространство, где мы каждый месяц упаковываем аккаунт и делаем контент вместе: уроки, живые встречи, поддержка в чате. Рядом с профессиональным маркетологом ты научишься сама делать крутой контент со смыслом — с помощью нейросетей. Чтобы не сливаться и расти рядом.</p>
+        <p>Пространство, где мы каждый месяц упаковываем аккаунт и делаем контент вместе: уроки, живые встречи, поддержка в чате. Рядом с профессиональным маркетологом ты научишься самостоятельно делать крутой контент со смыслом — с помощью нейросетей. Чтобы не сливаться и расти рядом.</p>
         <div class="price"><s>12 000 ₽</s> 9 890 ₽ <small>в месяц</small></div>
         <div class="early">🔥 при оплате до 26 октября</div>
         <a class="btn glow" href="https://antoninaal-cmyk.github.io/kontent-dom/">Заглянуть в Дом <span class="arr">→</span></a>
@@ -568,7 +568,7 @@ steps[0].classList.add('on');
 /* ---------- TOGGLE ---------- */
 const MODES = {
   a:[['01','Что делает','Пишет посты, сторис, сценарии Reels, придумывает идеи и разбирает статистику по скриншотам'],
-     ['02','Кто нажимает кнопки','Ты: копируешь и выкладываешь сама'],
+     ['02','Кто нажимает кнопки','Ты: копируешь и выкладываешь вручную'],
      ['03','Помнит тебя','Знает твой бизнес, продукты и стиль — не нужно объяснять каждый раз'],
      ['04','Для кого','Для всех, даже с нуля — настраиваем за одну встречу']],
   b:[['01','Что делает','То же, что помощник, плюс сам работает в компьютере, браузере и сервисах'],
@@ -601,6 +601,17 @@ const CAPS = [
   ['Таблицы и аналитика','всё в одном месте','Заявки, ответы и статистика собираются сами']
 ];
 document.getElementById('grid').innerHTML = CAPS.map((c,i)=>`<div class="cap" style="--d:${i*60}ms"><div class="cap-top"><span class="n">${String(i+1).padStart(2,'0')}</span><span class="tg2">${c[1]}</span></div><b>${c[0]}</b><p>${c[2]}</p></div>`).join('');
+
+/* ---------- Без автопрыжков: страница всегда открывается сверху ---------- */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+if (location.hash) { history.replaceState(null, '', location.pathname + location.search); window.scrollTo(0, 0); }
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const el = document.querySelector(a.getAttribute('href'));
+  if (!el) return;
+  e.preventDefault();
+  el.scrollIntoView({behavior: 'smooth', block: 'start'});
+  if (el.id === 'practicum') { el.classList.remove('spot'); void el.offsetWidth; el.classList.add('spot'); }
+}));
 
 /* ---------- REVEAL ---------- */
 const rv = document.querySelectorAll('.rv');
