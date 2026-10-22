@@ -231,6 +231,12 @@
   .announce:hover{transform:translateY(-2px)}
   .announce i{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,22,29,.35);animation:blinkdot 1.2s infinite}
   .announce b{color:#ff8a8f}
+  .price s{font-size:24px;color:var(--grey);text-decoration-thickness:2px;margin-right:4px}
+  .hc.dark .price s{color:#8b8785}
+  .early{display:inline-block;align-self:flex-start;font-size:13px;font-weight:800;color:#fff;background:var(--red);border-radius:999px;padding:7px 12px;margin:-6px 0 16px;animation:pulse 2s ease-in-out infinite}
+  #practicum{scroll-margin-top:20px}
+  #practicum:target{animation:spot 2.4s ease-out}
+  @keyframes spot{0%,30%{box-shadow:0 0 0 4px var(--red),var(--shadow-h)}100%{box-shadow:var(--shadow)}}
 
   /* about */
   .about{display:grid;grid-template-columns:1fr;gap:26px;align-items:center}
@@ -272,7 +278,7 @@
     <a class="chip" href="https://antoninaal-cmyk.github.io/neuro-test/?from=site">Нейро-тест</a>
   </div>
 
-  <a class="announce" href="#help"><i></i>1 ноября · практикум в Ессентуках · <b>запись открыта →</b></a>
+  <a class="announce" href="#practicum"><i></i>1 ноября · практикум в Ессентуках · <b>запись открыта →</b></a>
 
   <!-- HERO -->
   <header class="hero">
@@ -349,11 +355,13 @@
       <h2>Научу или <em>настрою за тебя</em></h2>
     </div>
     <div class="cards3 rv">
-      <div class="hc">
+      <div class="hc" id="practicum">
         <span class="lbl">В группе</span>
         <div class="when"><i></i>1 ноября 2026 · 12:00 · Ессентуки</div>
         <h3>Живой практикум</h3>
-        <p>Встреча с внедрением: регистрируемся, учимся запросам и настраиваем твоего личного нейромаркетолога и продюсера. Уходишь с готовым помощником и ассистентом.</p>
+        <p>Проведу я, маркетолог социальных сетей. Поговорим о личном бренде и смыслах в контенте, а потом — встреча с внедрением:</p>
+        <ul class="mini"><li>регистрируемся в Claude или ChatGPT</li><li>учимся запросам</li><li>настраиваем твоего личного нейромаркетолога и продюсера</li><li>делаем первые посты и карусели</li></ul>
+        <p>Уходишь с готовым помощником и ассистентом.</p>
         <div class="price">4 000 ₽ <small>· 10 мест</small></div>
         <a class="btn pulse" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Забронировать место <span class="arr">→</span></a>
         <div class="hint2">Откроется мой Telegram — напиши «ПРАКТИКУМ»</div>
@@ -371,11 +379,12 @@
         <div class="when light"><i></i>Старт 2 ноября</div>
         <h3>Контент-дом</h3>
         <p>Пространство, где мы каждый месяц упаковываем аккаунт и делаем контент вместе: уроки, живые встречи, поддержка в чате. Рядом с профессиональным маркетологом ты научишься сама делать крутой контент со смыслом — с помощью нейросетей. Чтобы не сливаться и расти рядом.</p>
-        <div class="price">9 800 ₽ <small>в месяц</small></div>
+        <div class="price"><s>12 000 ₽</s> 9 890 ₽ <small>в месяц</small></div>
+        <div class="early">🔥 при оплате до 26 октября</div>
         <a class="btn glow" href="https://antoninaal-cmyk.github.io/kontent-dom/">Заглянуть в Дом <span class="arr">→</span></a>
       </div>
     </div>
-    <p class="note rv">Не знаешь, что выбрать? <a href="https://antoninaal-cmyk.github.io/neuro-test/?from=site">Пройди тест</a> — по ответам подскажу, что подойдёт именно тебе.</p>
+    <p class="note rv">Остались вопросы? <a href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Напиши мне лично в Telegram</a> — отвечу и помогу выбрать.</p>
   </section>
 
   <!-- ABOUT -->
