@@ -207,7 +207,30 @@
   .hc.dark .lbl{color:#fff;border-color:#fff}
   .hc a{display:inline-flex;margin-top:14px;font-weight:800;color:var(--red);text-decoration:none;font-size:15px}
   .hc.dark a{color:#ff8a8f}
-  .note{text-align:center;font-size:14px;color:var(--grey);margin-top:18px}
+  .note{text-align:center;font-size:15px;color:var(--grey);margin-top:20px}
+  .note a{color:var(--red);font-weight:800}
+  .hc{display:flex;flex-direction:column}
+  .hc .lbl{align-self:flex-start}
+  .hc p{margin-bottom:12px}
+  .hc .btn{margin-top:auto;width:100%;padding:16px 18px;font-size:15px}
+  .hc a.btn{color:#fff}.hc a.btn.ghost{color:var(--black)}
+  .when{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:var(--black);background:var(--red-soft);border-radius:999px;padding:7px 12px;margin-bottom:12px;align-self:flex-start}
+  .when i{width:8px;height:8px;border-radius:50%;background:var(--red);animation:blinkdot 1.2s infinite}
+  .when.light{background:rgba(255,255,255,.12);color:#fff}
+  .price{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:var(--red);line-height:1;margin:6px 0 16px}
+  .price small{font-family:Manrope,sans-serif;font-size:14px;color:var(--grey);font-weight:600}
+  .hc.dark .price{color:#ff8a8f}.hc.dark .price small{color:#bdb8b5}
+  .mini{list-style:none;margin:-4px 0 14px}
+  .mini li{font-size:14.5px;line-height:1.45;padding:3px 0 3px 20px;position:relative;color:#4a4643}
+  .mini li::before{content:"✦";position:absolute;left:0;color:var(--red);font-size:12px;top:5px}
+  .hint2{font-size:12.5px;color:var(--grey);text-align:center;margin-top:8px}
+  .btn.glow{background:#fff;color:var(--red)!important;box-shadow:0 0 0 0 rgba(255,255,255,.6);animation:glow 1.6s ease-in-out infinite}
+  .btn.glow::after{background:linear-gradient(90deg,transparent,rgba(200,22,29,.15),transparent)}
+  @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(255,138,143,.55)}50%{box-shadow:0 0 0 12px rgba(255,138,143,0)}}
+  .announce{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;background:var(--black);color:#fff;border-radius:18px;padding:10px 14px;font-size:13px;text-align:center;font-weight:700;text-decoration:none;margin:0 auto 6px;max-width:560px;transition:transform .15s}
+  .announce:hover{transform:translateY(-2px)}
+  .announce i{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,22,29,.35);animation:blinkdot 1.2s infinite}
+  .announce b{color:#ff8a8f}
 
   /* about */
   .about{display:grid;grid-template-columns:1fr;gap:26px;align-items:center}
@@ -248,6 +271,8 @@
     <div class="who"><img src="hero.jpg" alt=""><span><b>Антонина Алдатова</b>маркетолог-смысловик</span></div>
     <a class="chip" href="https://antoninaal-cmyk.github.io/neuro-test/?from=site">Нейро-тест</a>
   </div>
+
+  <a class="announce" href="#help"><i></i>1 ноября · практикум в Ессентуках · <b>запись открыта →</b></a>
 
   <!-- HERO -->
   <header class="hero">
@@ -318,17 +343,39 @@
   </section>
 
   <!-- HELP -->
-  <section>
+  <section id="help">
     <div class="head-block rv">
       <span class="kicker">Как я помогаю</span>
       <h2>Научу или <em>настрою за тебя</em></h2>
     </div>
     <div class="cards3 rv">
-      <div class="hc"><span class="lbl">В группе</span><h3>Живой практикум</h3><p>Встреча с внедрением: регистрируемся, учимся запросам и настраиваем твоего личного нейромаркетолога. Уходишь с готовым помощником и промптами.</p></div>
-      <div class="hc"><span class="lbl">Лично</span><h3>Настройка под ключ</h3><p>Соберу помощника в чате или агента под твои задачи: контент, страница услуги, бот, уведомления, автоматизация.</p></div>
-      <div class="hc dark"><span class="lbl">Вместе</span><h3>Контент-дом</h3><p>Пространство, где мы каждый месяц упаковываем аккаунт и делаем контент вместе: уроки, живые встречи, поддержка в чате. Чтобы не сливаться и расти рядом с нейросетями.</p><a href="https://antoninaal-cmyk.github.io/kontent-dom/">Заглянуть в Дом →</a></div>
+      <div class="hc">
+        <span class="lbl">В группе</span>
+        <div class="when"><i></i>1 ноября 2026 · 12:00 · Ессентуки</div>
+        <h3>Живой практикум</h3>
+        <p>Встреча с внедрением: регистрируемся, учимся запросам и настраиваем твоего личного нейромаркетолога и продюсера. Уходишь с готовым помощником и ассистентом.</p>
+        <div class="price">4 000 ₽ <small>· 10 мест</small></div>
+        <a class="btn pulse" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Забронировать место <span class="arr">→</span></a>
+        <div class="hint2">Откроется мой Telegram — напиши «ПРАКТИКУМ»</div>
+      </div>
+      <div class="hc">
+        <span class="lbl">Лично</span>
+        <h3>Настройка под ключ</h3>
+        <p>Соберу помощника в чате или агента под твои задачи — и научу всем этим пользоваться:</p>
+        <ul class="mini"><li>контент и контент-план</li><li>страница услуги или сайт</li><li>бот и уведомления о заявках</li><li>автоматизация публикаций</li><li>маркетинговая стратегия</li></ul>
+        <div class="price">от 10 000 ₽</div>
+        <a class="btn ghost" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Обсудить задачу <span class="arr">→</span></a>
+      </div>
+      <div class="hc dark">
+        <span class="lbl">Вместе · каждый месяц</span>
+        <div class="when light"><i></i>Старт 2 ноября</div>
+        <h3>Контент-дом</h3>
+        <p>Пространство, где мы каждый месяц упаковываем аккаунт и делаем контент вместе: уроки, живые встречи, поддержка в чате. Рядом с профессиональным маркетологом ты научишься сама делать крутой контент со смыслом — с помощью нейросетей. Чтобы не сливаться и расти рядом.</p>
+        <div class="price">9 800 ₽ <small>в месяц</small></div>
+        <a class="btn glow" href="https://antoninaal-cmyk.github.io/kontent-dom/">Заглянуть в Дом <span class="arr">→</span></a>
+      </div>
     </div>
-    <p class="note rv">Стоимость — после теста и короткого разговора: так я предложу именно то, что тебе нужно.</p>
+    <p class="note rv">Не знаешь, что выбрать? <a href="https://antoninaal-cmyk.github.io/neuro-test/?from=site">Пройди тест</a> — по ответам подскажу, что подойдёт именно тебе.</p>
   </section>
 
   <!-- ABOUT -->
