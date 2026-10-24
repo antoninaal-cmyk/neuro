@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>ИИ-отдел для мастера маникюра</title>
+<title>Система продвижения для мастера маникюра</title>
 <meta name="description" content="Личный ИИ-отдел маркетинга для мастера маникюра: монтаж Reels, тексты твоим голосом, карусели, контент-план и публикации по расписанию. Антонина Алдатова.">
-<meta property="og:title" content="Ты делаешь маникюр — твой ИИ-отдел делает блог">
-<meta property="og:description" content="Монтаж, тексты, карусели, план и публикации по расписанию. Запись остаётся в твоём сервисе.">
+<meta property="og:title" content="Ты делаешь маникюр — система тебя продвигает">
+<meta property="og:description" content="Контент-план, публикации по расписанию, утренний дайджест, клиентская база и сарафан.">
 <meta property="og:image" content="https://antoninaal-cmyk.github.io/neuro/biz/nails/n1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&family=Bad+Script&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -201,6 +201,29 @@
     .fan{height:290px;max-width:440px}.fan img{width:180px;height:240px}.fan .b{margin-left:-90px}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+  /* v3: база клиентов + агент */
+  .tbl{width:100%;max-width:340px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-h);font-size:11.5px}
+  .tbl .h,.tbl .r{display:grid;grid-template-columns:1fr 1fr .9fr .8fr;padding:8px 10px;border-bottom:1px solid var(--line);gap:4px}
+  .tbl .h{background:#1f7a3a;color:#fff;font-weight:800}
+  .tbl .r.hl{background:#fff9e6}
+  .tbl .r b{color:var(--red)}
+  .news{display:block;margin-top:6px;padding:7px 9px;border-radius:10px;background:var(--bg);font-size:12px;line-height:1.35}
+  .news i{font-style:normal;color:var(--tg);font-weight:700}
+  .agent{max-width:980px;margin:0 auto;background:var(--black);color:#fff;border-radius:32px;padding:30px 20px;position:relative;overflow:hidden}
+  .agent::before{content:"✦";position:absolute;right:24px;top:18px;color:var(--red);font-size:28px;animation:twinkle 2.4s infinite}
+  .agent h2{color:#fff}
+  .agent .lead{color:#d6d0cb}
+  .ag-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:22px}
+  .ag{background:rgba(255,255,255,.06);border-radius:20px;padding:18px}
+  .ag h3{color:#fff;font-size:22px}
+  .ag ul{list-style:none;margin-top:8px}
+  .ag li{position:relative;padding-left:22px;margin-bottom:7px;font-size:14.5px;line-height:1.5;color:#e6e0db}
+  .ag li::before{content:"✦";position:absolute;left:0;color:#ff6a6f}
+  .ag.need{background:rgba(200,22,29,.18);border:1px solid rgba(255,106,111,.35)}
+  .ag-foot{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  .ag-foot p{font-size:15px;line-height:1.5;color:#e6e0db;max-width:560px}
+  .btn.light{background:#fff;color:var(--black);animation:none}.btn.light::after{display:none}
+  @media (min-width:760px){.ag-grid{grid-template-columns:repeat(3,1fr)}.agent{padding:40px}}
 </style>
 </head>
 <body>
@@ -213,9 +236,9 @@
   <!-- Первый экран -->
   <section class="hero">
     <div class="fan"><img class="a" src="n2.jpg" alt=""><img class="b" src="n1.jpg" alt=""><img class="c" src="n3.jpg" alt=""><div class="stamp">для<br>мастеров<br>маникюра</div></div>
-    <span class="kicker">Твой личный ИИ-отдел маркетинга</span>
-    <h1>Ты делаешь <em>маникюр</em> —<br>блог делает твой ИИ-отдел</h1>
-    <p class="lead">Монтажёр Reels, копирайтер твоим голосом, дизайнер каруселей и контент-планер — агент на твоём компьютере. Ты присылаешь видео с телефона, а получаешь готовый контент и публикации по расписанию.</p>
+    <span class="kicker">Система продвижения мастера</span>
+    <h1>Ты делаешь <em>маникюр</em> —<br>система тебя продвигает</h1>
+    <p class="lead">Контент-план с готовыми текстами, публикации по расписанию, каждое утро — подсказка в Telegram, клиентская база и сарафан, который можно посчитать. Без сложной техники и без «что выложить».</p>
     <a class="btn" href="#packs">Посмотреть пакеты <span>→</span></a>
     <div><span class="note-rec">✓ Запись остаётся в твоём сервисе — DIKIDI, YCLIENTS или другом</span></div>
   </section>
@@ -224,79 +247,65 @@
   <section>
     <div class="head-block rv"><span class="kicker">Знакомо?</span><h2>Руки заняты, <em>а блог стоит</em></h2></div>
     <div class="pains">
-      <div class="pain rv"><i>🎬</i><p><b>«Видео наснимала, а смонтировать некогда»</b>В галерее сотни роликов, в профиле — тишина.</p></div>
       <div class="pain rv"><i>✍️</i><p><b>«Не знаю, что выложить»</b>Вечером нет сил придумывать пост с нуля.</p></div>
-      <div class="pain rv"><i>👀</i><p><b>«Профиль не продаёт»</b>Красивые работы есть, но непонятно, почему записаться именно к тебе.</p></div>
       <div class="pain rv"><i>🔁</i><p><b>«Начинаю и сливаюсь»</b>Неделю веду блог, потом месяц тишины.</p></div>
+      <div class="pain rv"><i>👀</i><p><b>«Профиль не продаёт»</b>Красивые работы есть, но непонятно, почему записаться именно к тебе.</p></div>
+      <div class="pain rv"><i>💬</i><p><b>«Сарафан есть, но я его не вижу»</b>Не знаю, кто меня советует, и не могу отблагодарить.</p></div>
     </div>
   </section>
 
   <!-- Как работает -->
   <section>
-    <div class="head-block rv"><span class="kicker">Как это работает</span><h2>Ты присылаешь — <em>отдел делает</em></h2></div>
+    <div class="head-block rv"><span class="kicker">Как это работает</span><h2>Один раз настроили — <em>работает каждый день</em></h2></div>
     <div class="flow">
-      <div class="fl rv"><div class="e">📱</div><div><b>1. Кидаешь видео</b><span>С телефона в своего Telegram-бота — как подруге.</span></div></div>
-      <div class="fl dark rv"><div class="e">🤖</div><div><b>2. Агент работает</b><span>На твоём компьютере: монтаж, тексты, карусели.</span></div></div>
-      <div class="fl rv"><div class="e">✅</div><div><b>3. Готово в Telegram</b><span>Смотришь, правишь, если нужно, — одним сообщением.</span></div></div>
-      <div class="fl rv"><div class="e">🗓</div><div><b>4. Выходит само</b><span>Через планировщик — по расписанию, даже когда ты на работе.</span></div></div>
+      <div class="fl rv"><div class="e">🗓</div><div><b>1. План на месяц</b><span>С готовыми текстами под твою нишу.</span></div></div>
+      <div class="fl dark rv"><div class="e">⏰</div><div><b>2. Выходит само</b><span>Публикации стоят в планировщике по расписанию.</span></div></div>
+      <div class="fl rv"><div class="e">☀️</div><div><b>3. Подсказка утром</b><span>В Telegram: что сегодня, идея сторис и новости ниши.</span></div></div>
+      <div class="fl rv"><div class="e">📊</div><div><b>4. База и сарафан</b><span>Все клиентки и кто кого привёл — в одной таблице.</span></div></div>
     </div>
   </section>
 
-  <!-- Роли отдела -->
+  <!-- Блоки -->
   <section>
-    <div class="head-block rv"><span class="kicker">Кто в твоём отделе</span><h2>Восемь помощников <em>для мастера</em></h2><p class="lead">Набор зависит от пакета. Всё настраиваю я — тебе остаётся пользоваться.</p></div>
+    <div class="head-block rv"><span class="kicker">Что настраиваю</span><h2>Шесть шагов <em>к живому блогу</em></h2><p class="lead">Набор зависит от пакета. Всё настраиваю я — тебе остаётся пользоваться.</p></div>
 
     <div class="sol rv">
-      <div><div class="num"><i>01</i>Монтажёр</div><h3>Reels <em>из сырого видео</em></h3><p>Присылаешь видео процесса — агент убирает паузы, делает субтитры, режет на короткие ролики и ставит обложку.</p>
-        <ul><li>Паузы и «эээ» — убраны</li><li>Субтитры, чтобы смотрели без звука</li><li>Нарезка на 2–3 ролика из одного видео</li></ul></div>
-      <div class="vis"><div class="chat">
-        <div class="msg out">Вот видео с сегодняшнего френча 💅<div class="raw"><span style="background-image:url(n2.jpg)"></span><span style="background-image:url(n1.jpg)"></span></div><small>18:40</small></div>
-        <div class="msg in"><div class="who2">Твой ИИ-отдел 🤖</div>Готово! 3 Reels: паузы убраны, субтитры добавлены, обложки сделаны 👇<div class="vids"><span style="background-image:url(n2.jpg)"><b>Френч за 2 часа</b></span><span style="background-image:url(n1.jpg)"><b>3 ошибки</b></span><span style="background-image:url(n3.jpg)"><b>Бордо — хит</b></span></div><small>21:05</small></div>
-      </div></div>
-    </div>
-
-    <div class="sol rev rv">
-      <div><div class="num"><i>02</i>Копирайтер</div><h3>Тексты <em>твоим голосом</em></h3><p>Помощник знает твои услуги, цены и манеру речи. Пишешь одну фразу — получаешь пост, подпись к Reels или ответ клиентке.</p>
-        <ul><li>Посты, подписи, сторис</li><li>Ответы на частые вопросы</li><li>Без «как робот» — твоими словами</li></ul></div>
-      <div class="vis"><div class="post"><div class="ph" style="background-image:url(n2.jpg)"></div><div class="tx" id="ptext"></div></div></div>
-    </div>
-
-    <div class="sol rv">
-      <div><div class="num"><i>03</i>Дизайнер</div><h3>Карусели <em>готовыми картинками</em></h3><p>Агент собирает карусель из твоих фото в твоём стиле — сразу файлами, которые остаётся только выложить.</p>
-        <ul><li>Твои фото и цвета</li><li>Текст слайдов — продающий</li><li>Готовые картинки, не «шаблон для доработки»</li></ul></div>
-      <div class="vis"><div class="slides"><div class="sl" style="--img:url(n1.jpg)"><small>1/5</small><b>3 ошибки, из-за которых маникюр скалывается</b><small>листай →</small></div><div class="sl" style="--img:url(n2.jpg)"><small>2/5</small><b>Моешь посуду без перчаток</b><small>химия — враг покрытия</small></div><div class="sl" style="--img:url(n3.jpg)"><small>5/5</small><b>Сохрани и записывайся</b><small>ссылка в профиле</small></div></div></div>
-    </div>
-
-    <div class="sol rev rv">
-      <div><div class="num"><i>04</i>Контент-планер</div><h3>План и <em>дайджест каждое утро</em></h3><p>Контент-план на месяц под твою нишу. А каждое утро в Telegram — что сегодня публикуем и что снять в сторис.</p>
-        <ul><li>План на месяц: посты, Reels, сторис</li><li>Утреннее сообщение «что сегодня»</li><li>Идеи сторис на каждый день</li></ul></div>
-      <div class="vis"><div class="chat"><div class="msg in"><div class="who2">Твой ИИ-отдел 🤖</div>☀️ Доброе утро! Сегодня, вторник:<br>📌 Пост: «Как продлить носку покрытия» — текст готов<br>🎬 Reels: «Френч за 2 часа» — выйдет в 19:00<br>📱 Сторис: покажи рабочее место + опрос «френч или нюд?»<small>09:00</small></div></div></div>
-    </div>
-
-    <div class="sol rv">
-      <div><div class="num"><i>05</i>Публикации</div><h3>Выходит <em>по расписанию</em></h3><p>Готовый контент загружаем в планировщик — и он выходит сам, пока ты работаешь. Через официальный планировщик, без риска для аккаунта.</p>
-        <ul><li>Посты и Reels — по расписанию</li><li>Ты только проверяешь</li><li>Никаких ботов «нажимающих кнопки» в Instagram</li></ul></div>
-      <div class="vis"><div class="cal" id="cal"></div></div>
-    </div>
-
-    <div class="sol rev rv">
-      <div><div class="num"><i>06</i>Упаковка</div><h3>Профиль, <em>который продаёт</em></h3><p>Позиционирование, шапка, актуальные и закрепы — чтобы с первого взгляда было понятно, почему записаться именно к тебе.</p>
+      <div><div class="num"><i>01</i>Упаковка</div><h3>Профиль, <em>который продаёт</em></h3><p>Позиционирование, шапка, актуальные и закрепы — чтобы с первого взгляда было понятно, почему записаться именно к тебе.</p>
         <ul><li>Кто ты и почему к тебе</li><li>Шапка, актуальные, закрепы</li><li>Ссылка на сайт и запись</li></ul></div>
       <div class="vis"><div class="prof"><div class="hd"><div class="av2" style="background-image:url(n1.jpg)"></div><div class="st"><span><b>148</b>постов</span><span><b>2 310</b>подписч.</span></div></div><div class="bio"><b>Ирина | маникюр в Пятигорске 💅</b><br>Покрытие, которое держится 3–4 недели<br>Стерильно · уютно · без спешки<br>👇 Запись и прайс</div><div class="hl"><span><i style="background-image:url(n2.jpg)"></i>Работы</span><span><i style="background-image:url(n3.jpg)"></i>Прайс</span><span><i style="background-image:url(n1.jpg)"></i>Отзывы</span><span><i></i>Уход</span></div></div></div>
     </div>
 
-    <div class="sol rv">
-      <div><div class="num"><i>07</i>Сайт-визитка</div><h3>Одна ссылка <em>на всё</em></h3><p>Работы, прайс, адрес и кнопка «Записаться», которая ведёт в твой DIKIDI или YCLIENTS. Открывается без VPN.</p>
+    <div class="sol rev rv">
+      <div><div class="num"><i>02</i>Сайт-визитка</div><h3>Одна ссылка <em>на всё</em></h3><p>Работы, прайс, адрес и кнопка «Записаться», которая ведёт в твой DIKIDI или YCLIENTS. Открывается без VPN.</p>
         <ul><li>Работы и прайс</li><li>Кнопка записи — в твой сервис</li><li>Ссылка в шапке профиля</li></ul>
         <span class="tag">Так сделаны мои сайты</span></div>
       <div class="vis"><div class="phone"><div class="scr"><div class="ph" style="background-image:url(n1.jpg)"></div><div class="bd"><h4>Маникюр с покрытием</h4><div class="row"><span>Маникюр + покрытие</span><b>2 000 ₽</b></div><div class="row"><span>Френч</span><b>2 300 ₽</b></div><div class="row"><span>Дизайн</span><b>от 100 ₽</b></div><div class="bb">Записаться</div><div class="sm">откроется твой сервис записи</div></div></div></div></div>
     </div>
 
+    <div class="sol rv">
+      <div><div class="num"><i>03</i>Контент-план</div><h3>Месяц постов <em>с готовыми текстами</em></h3><p>План на месяц под твою нишу: посты, Reels и сторис — с текстами, которые звучат как ты. Больше никаких «что выложить».</p>
+        <ul><li>Посты, идеи Reels, сторис</li><li>Готовые тексты и подписи</li><li>Прогрев к записи внутри плана</li></ul></div>
+      <div class="vis"><div class="post"><div class="ph" style="background-image:url(n2.jpg)"></div><div class="tx" id="ptext"></div></div></div>
+    </div>
+
     <div class="sol rev rv">
-      <div><div class="num"><i>08</i>Сарафан</div><h3>Сертификаты <em>и «приведи подругу»</em></h3><p>Красивые электронные сертификаты, которые дарят и пересылают, и личные ссылки для постоянных клиенток — видно, кто кого привёл.</p>
-        <ul><li>Сертификат-открытка с твоими работами</li><li>Ссылка «приведи подругу»</li><li>Таблица: кто кого привёл</li></ul>
+      <div><div class="num"><i>04</i>Публикации</div><h3>Выходит <em>по расписанию</em></h3><p>Загружаем публикации в официальный планировщик — и они выходят сами, пока ты работаешь. Ты всегда видишь, что и когда выйдет.</p>
+        <ul><li>Посты и Reels — по расписанию</li><li>Ты только проверяешь</li><li>Без риска для аккаунта</li></ul></div>
+      <div class="vis"><div class="cal" id="cal"></div></div>
+    </div>
+
+    <div class="sol rv">
+      <div><div class="num"><i>05</i>Дайджест ⭐</div><h3>Каждое утро — <em>подсказка в Telegram</em></h3><p>Твой бот присылает: что сегодня публикуем, идею для сторис и свежие новости бьюти-сферы — чтобы всегда было о чём рассказать.</p>
+        <ul><li>План дня из твоего контент-плана</li><li>Идея сторис на сегодня</li><li>2–3 новости ниши со ссылками</li></ul></div>
+      <div class="vis"><div class="chat"><div class="msg in"><div class="who2">Твой бот ☀️</div>Доброе утро! Сегодня, вторник:<br>📌 Пост: «Как продлить носку покрытия» — текст готов<br>📱 Сторис: покажи рабочее место + опрос «френч или нюд?»<span class="news"><i>Новости:</i> какие оттенки выбирают этой осенью · новый тренд в дизайне френча</span><small>09:00</small></div></div></div>
+    </div>
+
+    <div class="sol rev rv">
+      <div><div class="num"><i>06</i>База и сарафан</div><h3>Клиентки и <em>«приведи подругу»</em></h3><p>Все клиентки — в одной Google Таблице: услуга, дата визита, день рождения, откуда пришла. У постоянных — личная ссылка «приведи подругу», а ещё красивые сертификаты в подарок.</p>
+        <ul><li>Клиентская база в таблице</li><li>Видно, кто кого привёл</li><li>Сертификаты-открытки</li></ul>
         <span class="tag">Так сделаны мои открытки-подарки</span></div>
-      <div class="vis"><div class="cert"><div class="ph" style="background-image:url(n3.jpg)"></div><div class="bd"><small>Подарочный сертификат</small><b>Маникюр с покрытием</b><div style="font-size:13px;opacity:.9">для Марины — от Оли 🤍</div><span>действует до 31 декабря</span></div></div></div>
+      <div class="vis"><div class="tbl"><div class="h"><span>Клиентка</span><span>Услуга</span><span>Визит</span><span>Откуда</span></div><div class="r"><span>Ирина</span><span>Френч</span><span>14.10</span><span>Instagram</span></div><div class="r hl"><span>Марина</span><span>Покрытие</span><span>21.10</span><span><b>от Оли</b></span></div><div class="r"><span>Ольга</span><span>Дизайн</span><span>22.10</span><span>Сайт</span></div></div>
+        <div class="cert" style="margin-top:12px;max-width:260px"><div class="bd"><small>Подарочный сертификат</small><b>Маникюр с покрытием</b><div style="font-size:13px;opacity:.9">для Марины — от Оли 🤍</div></div></div></div>
     </div>
   </section>
 
@@ -306,55 +315,59 @@
       <span class="kicker" style="background:rgba(200,22,29,.25);color:#ffb3b6">Как это может работать у тебя</span>
       <h3>Один обычный <em>вторник</em></h3>
       <div class="tl">
-        <div><b>09:00</b><span>В Telegram — что сегодня публикуем и идея для сторис.</span></div>
-        <div><b>13:00</b><span>Между клиентками кидаешь в бота видео процесса — 30 секунд.</span></div>
-        <div><b>19:00</b><span>Вчерашний Reels вышел сам по расписанию.</span></div>
-        <div><b>21:00</b><span>Агент прислал 3 готовых ролика и карусель. Смотришь, ставишь в план.</span></div>
+        <div><b>09:00</b><span>В Telegram — что сегодня публикуем, идея сторис и пара новостей.</span></div>
+        <div><b>13:00</b><span>Между клиентками снимаешь сторис по подсказке — 2 минуты.</span></div>
+        <div><b>19:00</b><span>Пост из плана вышел сам по расписанию.</span></div>
+        <div><b>20:00</b><span>Новая клиентка пришла по ссылке от постоянной — в таблице видно от кого.</span></div>
       </div>
-      <div class="script">Ты делаешь маникюр — блог делает твой ИИ-отдел.</div>
-    </div>
-  </section>
-
-  <!-- Честно -->
-  <section>
-    <div class="head-block rv"><span class="kicker">Честно о главном</span><h2>Что нужно <em>с твоей стороны</em></h2></div>
-    <div class="honest">
-      <div class="rv"><b>💻 Компьютер</b>Агент работает на твоём компьютере — он должен быть включён, когда отдел «на смене» (например, вечером).</div>
-      <div class="rv"><b>🤖 Подписка на нейросеть</b>Агенту нужна платная подписка Claude — около 20 $ в месяц. Помогу оформить.</div>
-      <div class="rv"><b>🗓 Публикации</b>Через официальный планировщик. Ты всегда видишь, что и когда выйдет.</div>
-      <div class="rv"><b>💅 Запись</b>Остаётся в твоём сервисе. Я не меняю твою систему записи — я делаю так, чтобы в неё приходили.</div>
+      <div class="script">Ты делаешь маникюр — система тебя продвигает.</div>
     </div>
   </section>
 
   <!-- Пакеты -->
   <section id="packs">
-    <div class="head-block rv"><span class="kicker">Пакеты</span><h2>Выбери <em>свой отдел</em></h2></div>
+    <div class="head-block rv"><span class="kicker">Пакеты</span><h2>Выбери <em>свой пакет</em></h2></div>
     <div class="packs">
       <div class="pk rv">
         <h3>Старт</h3>
         <div class="pr">10 000 ₽</div><div class="later">для первых 5 клиентов · далее 30 000 ₽</div>
-        <ul><li>Упаковка профиля: позиционирование, шапка, актуальные, закрепы</li><li>Сайт-визитка с кнопкой записи в твой сервис</li><li>ИИ-помощник твоим голосом в чате</li></ul>
+        <ul><li>Упаковка профиля: позиционирование, шапка, актуальные, закрепы</li><li>Сайт-визитка с кнопкой записи в твой сервис</li></ul>
       </div>
       <div class="pk rv">
         <h3>Контент</h3>
         <div class="pr">15 000 ₽</div><div class="later">для первых 5 клиентов · далее 35 000 ₽</div>
-        <ul><li class="plus">Всё из «Старта»</li><li>Контент-план на месяц</li><li>Ежедневный дайджест в Telegram: что публикуем и что снять в сторис</li><li>Сертификаты и «приведи подругу»</li></ul>
+        <ul><li class="plus">Всё из «Старта»</li><li>Контент-план на месяц с готовыми текстами</li><li>Публикации по расписанию через планировщик</li><li>Ежедневный дайджест в Telegram</li></ul>
       </div>
-      <div class="pk hit rv"><span class="badge">Полный отдел</span>
-        <h3>ИИ-отдел</h3>
+      <div class="pk hit rv"><span class="badge">Полная система</span>
+        <h3>Система</h3>
         <div class="pr">25 000 ₽</div><div class="later">для первых 5 клиентов · далее 45 000 ₽</div>
-        <ul><li class="plus">Всё из «Контента»</li><li>Агент на твоём компьютере</li><li>Монтаж Reels: паузы, субтитры, нарезка, обложки</li><li>Карусели готовыми картинками</li><li>Telegram-бот: присылаешь видео — получаешь готовое</li><li>Публикации по расписанию через планировщик</li></ul>
+        <ul><li class="plus">Всё из «Контента»</li><li>Клиентская база в Google Таблице</li><li>Реферальная программа «приведи подругу»</li><li>Подарочные сертификаты-открытки</li></ul>
       </div>
     </div>
     <div class="first rv">🔥 Цены для первых пяти клиентов — честно только для первых пяти. Дальше пакеты стоят 30 / 35 / 45 тысяч.</div>
   </section>
 
+  <!-- Следующий уровень: агент -->
+  <section>
+    <div class="agent rv">
+      <span class="kicker" style="background:rgba(200,22,29,.25);color:#ffb3b6">Следующий уровень</span>
+      <h2>ИИ-агент <em>на твоём компьютере</em></h2>
+      <p class="lead">Для тех, кто хочет ещё больше свободы. Агент — это нейросеть, которая сама работает на компьютере: монтирует, собирает картинки, готовит публикации. Это возможно уже сейчас — но нужно твоё участие, и я всему научу.</p>
+      <div class="ag-grid">
+        <div class="ag"><h3>Что умеет</h3><ul><li>Монтаж Reels из твоего видео: убирает паузы, делает субтитры, нарезку и обложки</li><li>Карусели сразу готовыми картинками</li><li>Тексты к каждой публикации</li></ul></div>
+        <div class="ag"><h3>Как устроено</h3><ul><li>Кидаешь видео с телефона в своего Telegram-бота</li><li>Агент на компьютере делает монтаж и карусели</li><li>Готовое приходит тебе — проверяешь и ставишь в план</li></ul></div>
+        <div class="ag need"><h3>Что нужно от тебя</h3><ul><li>Компьютер или ноутбук, включённый, пока агент работает</li><li>Подписка на нейросеть Claude — около 20 $ в месяц</li><li>Желание снимать видео: говорящая голова, процесс, работы</li><li>Пара часов на обучение — я покажу всё простым языком</li></ul></div>
+      </div>
+      <div class="ag-foot"><p>Стоимость настройки и обучения — после созвона: зависит от того, что ты хочешь, чтобы агент делал.</p><a class="btn light" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Хочу агента <span>→</span></a></div>
+    </div>
+  </section>
+
   <!-- Как проходит -->
   <section>
-    <div class="head-block rv"><span class="kicker">Как проходит</span><h2>Три шага — <em>и отдел работает</em></h2></div>
+    <div class="head-block rv"><span class="kicker">Как проходит</span><h2>Три шага — <em>и система работает</em></h2></div>
     <div class="how">
       <div class="rv"><i>1</i><div><b>Созвон</b><span>Разбираем твою работу, блог и выбираем пакет.</span></div></div>
-      <div class="rv"><i>2</i><div><b>Настраиваю сама</b><span>Ты работаешь с клиентками — я собираю и проверяю твой отдел.</span></div></div>
+      <div class="rv"><i>2</i><div><b>Настраиваю сама</b><span>Ты работаешь с клиентками — я собираю и проверяю систему.</span></div></div>
       <div class="rv"><i>3</i><div><b>Готово + инструкция</b><span>Показываю, как пользоваться, простым языком. Без «я чайник».</span></div></div>
     </div>
   </section>
@@ -362,7 +375,7 @@
   <section>
     <div class="final rv">
       <div class="me"><img src="../../hero.jpg" alt="Антонина Алдатова"><p><b>Антонина Алдатова</b>17 лет мастер маникюра и 5 лет — владелица своего салона. Дипломированный маркетолог социальных сетей с 2017 года. Знаю твою работу изнутри.</p></div>
-      <h2>Соберём <em>твой отдел?</em></h2>
+      <h2>Настроим <em>твою систему?</em></h2>
       <div style="margin-top:16px"><a class="btn" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Написать мне «МАНИКЮР» <span>→</span></a></div>
       <p class="muted">Отвечу лично и подскажу, какой пакет подойдёт именно тебе.</p>
     </div>
