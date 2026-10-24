@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Нейросети для мастера маникюра</title>
-<meta name="description" content="Как мастеру маникюра автоматизировать запись, напоминания, сарафан и блог с помощью нейросетей. Антонина Алдатова.">
-<meta property="og:title" content="Пока ты делаешь маникюр, запись и блог работают сами">
-<meta property="og:description" content="Запись без переписки, напоминание о коррекции, сарафан и блог твоим голосом — как это может работать у тебя.">
+<title>ИИ-отдел для мастера маникюра</title>
+<meta name="description" content="Личный ИИ-отдел маркетинга для мастера маникюра: монтаж Reels, тексты твоим голосом, карусели, контент-план и публикации по расписанию. Антонина Алдатова.">
+<meta property="og:title" content="Ты делаешь маникюр — твой ИИ-отдел делает блог">
+<meta property="og:description" content="Монтаж, тексты, карусели, план и публикации по расписанию. Запись остаётся в твоём сервисе.">
 <meta property="og:image" content="https://antoninaal-cmyk.github.io/neuro/biz/nails/n1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&family=Bad+Script&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -59,27 +59,35 @@
   .fan .b{left:50%;margin-left:-75px;top:0;z-index:2;animation:float 4s ease-in-out infinite}
   .fan .c{right:6px;transform:rotate(9deg)}
   .fan .stamp{position:absolute;z-index:3;right:-4px;bottom:0;width:92px;height:92px;border-radius:50%;background:var(--red);color:#fff;font-family:'Bad Script',cursive;font-size:15px;line-height:1.1;display:flex;align-items:center;justify-content:center;text-align:center;transform:rotate(-12deg);box-shadow:0 10px 22px rgba(200,22,29,.35)}
-  .hero .lead{max-width:620px;margin:16px auto 24px}
+  .hero .lead{max-width:640px;margin:16px auto 24px}
+  .note-rec{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:700;color:var(--green);background:#e9f6ec;border-radius:999px;padding:9px 14px}
 
   /* pains */
   .pains{display:grid;grid-template-columns:1fr;gap:10px;max-width:760px;margin:0 auto}
   .pain{display:flex;gap:12px;align-items:center;background:var(--card);border-radius:20px;padding:16px 18px;box-shadow:var(--shadow)}
   .pain i{flex:0 0 40px;height:40px;border-radius:13px;background:var(--red-soft);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:20px}
-  .pain p{font-size:15.5px;line-height:1.45}
+  .pain p{font-size:15px;line-height:1.45}
   .pain p b{display:block;font-family:'Bad Script',cursive;font-weight:400;font-size:19px;color:var(--black)}
 
-  /* solutions */
+  /* flow */
+  .flow{display:grid;grid-template-columns:1fr;gap:10px;max-width:860px;margin:0 auto}
+  .fl{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;position:relative}
+  .fl .e{flex:0 0 46px;height:46px;border-radius:14px;background:var(--red-soft);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .fl b{display:block;font-size:15px}
+  .fl span{font-size:13.5px;color:var(--grey);line-height:1.45}
+  .fl.dark{background:var(--black);color:#fff}.fl.dark span{color:#c9c3be}.fl.dark .e{background:rgba(200,22,29,.3)}
+
+  /* roles */
   .sol{background:var(--card);border-radius:28px;box-shadow:var(--shadow);padding:22px 18px;margin-bottom:16px;display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
-  .sol .num{display:inline-flex;width:34px;height:34px;border-radius:11px;background:var(--red);color:#fff;font-weight:800;font-size:14px;align-items:center;justify-content:center;margin-bottom:10px}
+  .sol .num{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--grey)}
+  .sol .num i{width:34px;height:34px;border-radius:11px;background:var(--red);color:#fff;font-style:normal;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center;letter-spacing:0}
   .sol p{font-size:15.5px;line-height:1.6;color:#3b3836}
   .sol ul{list-style:none;margin-top:10px}
   .sol li{position:relative;padding-left:22px;margin-bottom:6px;font-size:14.5px;line-height:1.5}
   .sol li::before{content:"✦";position:absolute;left:0;color:var(--red)}
-  .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);background:var(--bg);border-radius:999px;padding:5px 10px;margin-bottom:10px}
-  .tag.real{color:var(--green);background:#e9f6ec}
-  .vis{background:var(--bg);border-radius:22px;padding:16px;min-height:200px;display:flex;align-items:center;justify-content:center}
+  .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);background:#e9f6ec;border-radius:999px;padding:5px 10px;margin-top:12px}
+  .vis{background:var(--bg);border-radius:22px;padding:16px;min-height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column}
 
-  /* phone mock */
   .phone{width:220px;border-radius:30px;background:#111;padding:9px;box-shadow:var(--shadow-h)}
   .scr{background:#fff;border-radius:23px;overflow:hidden}
   .scr .ph{height:120px;background:center/cover}
@@ -88,42 +96,54 @@
   .scr .row{display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-bottom:1px solid var(--line)}
   .scr .row b{color:var(--red)}
   .scr .bb{margin-top:10px;background:var(--red);color:#fff;border-radius:999px;text-align:center;font-size:12px;font-weight:800;padding:9px}
+  .scr .sm{font-size:10px;color:var(--grey);text-align:center;margin-top:5px}
 
-  /* chat mock */
+  .prof{width:100%;max-width:330px;background:#fff;border-radius:18px;padding:14px;box-shadow:var(--shadow-h)}
+  .prof .hd{display:flex;gap:12px;align-items:center}
+  .prof .av2{width:56px;height:56px;border-radius:50%;background:center/cover;border:2px solid var(--red)}
+  .prof .st{display:flex;gap:12px;font-size:11px;color:var(--grey)}.prof .st b{display:block;color:var(--black);font-size:13px}
+  .prof .bio{font-size:12px;line-height:1.5;margin-top:10px}
+  .prof .hl{display:flex;gap:10px;margin-top:12px}
+  .prof .hl span{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:9.5px;font-weight:700;color:var(--grey)}
+  .prof .hl i{width:40px;height:40px;border-radius:50%;border:2px solid var(--red-soft);background:center/cover,var(--red-soft);display:block}
+
   .chat{width:100%;max-width:330px;display:flex;flex-direction:column;gap:8px}
-  .msg{max-width:88%;border-radius:16px;padding:10px 12px;font-size:13.5px;line-height:1.45;box-shadow:var(--shadow);animation:rise .5s both}
+  .msg{max-width:90%;border-radius:16px;padding:10px 12px;font-size:13px;line-height:1.45;box-shadow:var(--shadow);animation:rise .5s both}
   .msg.in{background:#fff;align-self:flex-start;border-bottom-left-radius:5px}
   .msg.out{background:#e6f4ff;align-self:flex-end;border-bottom-right-radius:5px}
   .msg small{display:block;font-size:10.5px;color:var(--grey);margin-top:3px;font-weight:600}
   .msg .who2{font-size:11px;font-weight:800;color:var(--tg);margin-bottom:2px}
-  .kb{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-  .kb span{background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:6px 9px;font-size:12px;font-weight:700;color:var(--tg)}
-  .msg:nth-child(2){animation-delay:.4s}.msg:nth-child(3){animation-delay:.8s}.msg:nth-child(4){animation-delay:1.2s}
+  .msg:nth-child(2){animation-delay:.5s}.msg:nth-child(3){animation-delay:1s}
+  .vids{display:flex;gap:6px;margin-top:8px}
+  .vids span{flex:1;aspect-ratio:9/16;border-radius:10px;background:center/cover;position:relative;overflow:hidden}
+  .vids span::after{content:"▶";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;background:rgba(0,0,0,.18)}
+  .vids span b{position:absolute;left:4px;right:4px;bottom:6px;z-index:1;font-size:8px;color:#fff;background:rgba(0,0,0,.55);border-radius:4px;padding:2px 3px;text-align:center}
+  .raw{display:flex;gap:6px;margin-top:6px}.raw span{width:42px;height:58px;border-radius:8px;background:center/cover;opacity:.85}
 
-  /* table mock */
-  .tbl{width:100%;max-width:340px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:12px}
-  .tbl .h,#rows>div{display:grid;grid-template-columns:1fr 1.1fr .9fr;padding:8px 10px;border-bottom:1px solid var(--line)}
-  .tbl .h{background:#1f7a3a;color:#fff;font-weight:800}
-  .tbl .new{background:#fff9e6;animation:rise .5s both}
-  .notif{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:16px;padding:10px 12px;box-shadow:var(--shadow-h);max-width:340px;margin-bottom:10px;animation:rise .5s both}
-  .notif .ic{flex:0 0 34px;height:34px;border-radius:50%;background:var(--tg);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px}
-  .notif b{font-size:12.5px;display:block}
-  .notif p{font-size:12.5px;line-height:1.4}
+  .slides{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%;max-width:340px}
+  .sl{aspect-ratio:4/5;border-radius:14px;padding:10px 9px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:linear-gradient(180deg,rgba(17,16,16,.12),rgba(17,16,16,.75)),var(--img) center/cover;box-shadow:var(--shadow-h)}
+  .sl:nth-child(3){background:linear-gradient(180deg,rgba(200,22,29,.1),rgba(165,15,21,.88)),var(--img) center/cover}
+  .sl b{font-family:'Cormorant Garamond',serif;font-size:15px;line-height:1.05}
+  .sl small{font-size:9px;font-weight:700;opacity:.9}
 
-  /* certificate mock */
-  .cert{width:100%;max-width:330px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-h);background:linear-gradient(135deg,#de2a31,var(--red) 55%,var(--red-d));color:#fff;position:relative}
-  .cert .ph{height:130px;background:center/cover}
-  .cert .bd{padding:14px 16px 16px;text-align:center}
-  .cert small{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.85}
-  .cert b{display:block;font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1;margin:6px 0}
-  .cert span{display:inline-block;background:#fff;color:var(--red);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800;margin-top:6px}
-
-  /* post mock */
   .post{width:100%;max-width:340px;background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-h)}
-  .post .ph{height:210px;background:center/cover}
+  .post .ph{height:190px;background:center/cover}
   .post .tx{padding:12px;font-size:12.5px;line-height:1.5;white-space:pre-wrap;min-height:150px}
 
-  /* story */
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;width:100%;max-width:340px}
+  .cal span{background:#fff;border-radius:9px;padding:6px 4px;font-size:9.5px;line-height:1.25;min-height:58px;box-shadow:var(--shadow)}
+  .cal span b{display:block;font-size:10px;color:var(--grey);margin-bottom:3px}
+  .cal span.ok{border:1.5px solid var(--green)}
+  .cal span.ok::after{content:"✓ выйдет";display:block;color:var(--green);font-weight:800;font-size:8.5px;margin-top:3px}
+
+  .cert{width:100%;max-width:320px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-h);background:linear-gradient(135deg,#de2a31,var(--red) 55%,var(--red-d));color:#fff}
+  .cert .ph{height:120px;background:center/cover}
+  .cert .bd{padding:14px 16px 16px;text-align:center}
+  .cert small{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.85}
+  .cert b{display:block;font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1;margin:6px 0}
+  .cert span{display:inline-block;background:#fff;color:var(--red);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800;margin-top:6px}
+
+  /* day */
   .day{max-width:760px;margin:0 auto;background:var(--black);color:#fff;border-radius:30px;padding:26px 20px}
   .day h3{color:#fff}
   .tl{margin-top:16px}
@@ -131,16 +151,36 @@
   .tl b{flex:0 0 52px;color:#ff8a8e;font-weight:800}
   .day .script{font-size:22px;margin-top:14px;color:#ffb3b6}
 
-  /* how + price */
+  /* honest */
+  .honest{max-width:760px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:10px}
+  .honest div{background:var(--card);border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);font-size:14.5px;line-height:1.55}
+  .honest b{display:block;margin-bottom:2px}
+
+  /* packages */
+  .packs{display:grid;grid-template-columns:1fr;gap:14px;max-width:980px;margin:0 auto}
+  .pk{background:var(--card);border-radius:26px;padding:24px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative}
+  .pk.hit{background:var(--black);color:#fff}
+  .pk.hit .badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;border-radius:999px;padding:6px 12px;white-space:nowrap}
+  .pk h3{font-size:28px}
+  .pk .pr{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;color:var(--red);line-height:1;margin:8px 0 4px}
+  .pk.hit .pr{color:#ff6a6f}
+  .pk .later{font-size:12.5px;font-weight:700;color:var(--grey);margin-bottom:14px}
+  .pk.hit .later{color:#b9b3ae}
+  .pk ul{list-style:none;flex:1}
+  .pk li{position:relative;padding-left:22px;margin-bottom:8px;font-size:14.5px;line-height:1.45}
+  .pk li::before{content:"✦";position:absolute;left:0;color:var(--red)}
+  .pk li.plus{font-weight:800}
+  .first{max-width:760px;margin:18px auto 0;text-align:center;background:var(--red-soft);border-radius:18px;padding:14px 16px;font-size:14.5px;line-height:1.5}
+
   .how{display:grid;grid-template-columns:1fr;gap:10px;max-width:760px;margin:0 auto}
   .how div{background:var(--card);border-radius:20px;padding:18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start}
   .how i{flex:0 0 36px;height:36px;border-radius:12px;background:var(--red);color:#fff;font-style:normal;font-weight:800;display:flex;align-items:center;justify-content:center}
   .how b{display:block;margin-bottom:2px}
   .how span{font-size:14.5px;color:var(--grey);line-height:1.5}
+
   .final{background:var(--card);border-radius:32px;box-shadow:var(--shadow);padding:30px 20px;text-align:center;max-width:760px;margin:0 auto}
-  .price{font-family:'Cormorant Garamond',serif;font-size:50px;font-weight:700;color:var(--red);line-height:1;margin:8px 0}
   .final .muted{font-size:14px;margin-top:12px;line-height:1.5}
-  .me{display:flex;gap:14px;align-items:center;text-align:left;max-width:520px;margin:0 auto 20px;background:var(--bg);border-radius:20px;padding:12px}
+  .me{display:flex;gap:14px;align-items:center;text-align:left;max-width:540px;margin:0 auto 18px;background:var(--bg);border-radius:20px;padding:12px}
   .me img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 43%;border:2px solid var(--red)}
   .me p{font-size:13.5px;line-height:1.45;color:#3b3836}
   .me b{font-family:'Amatic SC',sans-serif;font-size:22px;display:block;color:var(--black)}
@@ -152,6 +192,10 @@
     .sol{grid-template-columns:1.1fr 1fr;padding:28px}
     .sol.rev .vis{order:-1}
     .pains{grid-template-columns:1fr 1fr}
+    .flow{grid-template-columns:repeat(4,1fr)}
+    .fl{flex-direction:column;text-align:center}
+    .honest{grid-template-columns:1fr 1fr}
+    .packs{grid-template-columns:repeat(3,1fr)}
     .how{grid-template-columns:repeat(3,1fr)}
     .how div{flex-direction:column}
     .fan{height:290px;max-width:440px}.fan img{width:180px;height:240px}.fan .b{margin-left:-90px}
@@ -162,123 +206,182 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="who"><span class="av"><img src="../../hero.jpg" alt=""></span><span><b>Антонина Алдатова</b>маркетолог-смысловик</span></div>
-    <a class="chip" href="#go">Хочу так</a>
+    <div class="who"><span class="av"><img src="../../hero.jpg" alt=""></span><span><b>Антонина Алдатова</b>маркетолог и продюсер</span></div>
+    <a class="chip" href="#packs">Пакеты</a>
   </header>
 
+  <!-- Первый экран -->
   <section class="hero">
     <div class="fan"><img class="a" src="n2.jpg" alt=""><img class="b" src="n1.jpg" alt=""><img class="c" src="n3.jpg" alt=""><div class="stamp">для<br>мастеров<br>маникюра</div></div>
-    <span class="kicker">Нейросети для мастера</span>
-    <h1>Пока ты делаешь <em>маникюр</em>,<br>запись и блог работают сами</h1>
-    <p class="lead">Запись без бесконечной переписки, напоминание «пора на коррекцию», сарафан, который можно посчитать, и блог твоим голосом. Покажу, как это может выглядеть у тебя.</p>
-    <a class="btn" href="#go">Хочу так же <span>→</span></a>
+    <span class="kicker">Твой личный ИИ-отдел маркетинга</span>
+    <h1>Ты делаешь <em>маникюр</em> —<br>блог делает твой ИИ-отдел</h1>
+    <p class="lead">Монтажёр Reels, копирайтер твоим голосом, дизайнер каруселей и контент-планер — агент на твоём компьютере. Ты присылаешь видео с телефона, а получаешь готовый контент и публикации по расписанию.</p>
+    <a class="btn" href="#packs">Посмотреть пакеты <span>→</span></a>
+    <div><span class="note-rec">✓ Запись остаётся в твоём сервисе — DIKIDI, YCLIENTS или другом</span></div>
   </section>
 
+  <!-- Боли -->
   <section>
-    <div class="head-block rv"><span class="kicker">Знакомо?</span><h2>Руки заняты — <em>а клиенты пишут</em></h2></div>
+    <div class="head-block rv"><span class="kicker">Знакомо?</span><h2>Руки заняты, <em>а блог стоит</em></h2></div>
     <div class="pains">
-      <div class="pain rv"><i>📱</i><p><b>«Отвечаю в директ между клиентками»</b>Пока ищешь окошко в графике, человек уже записался к другому мастеру.</p></div>
-      <div class="pain rv"><i>🗓</i><p><b>«Клиентки пропадают после первого раза»</b>Не потому, что не понравилось, — просто забыли, что пора на коррекцию.</p></div>
-      <div class="pain rv"><i>💬</i><p><b>«Сарафан работает, но я не знаю, кто кого привёл»</b>И не могу поблагодарить тех, кто меня советует.</p></div>
-      <div class="pain rv"><i>✍️</i><p><b>«Не знаю, что выложить»</b>Вечером нет сил писать пост, а блог стоит неделями.</p></div>
+      <div class="pain rv"><i>🎬</i><p><b>«Видео наснимала, а смонтировать некогда»</b>В галерее сотни роликов, в профиле — тишина.</p></div>
+      <div class="pain rv"><i>✍️</i><p><b>«Не знаю, что выложить»</b>Вечером нет сил придумывать пост с нуля.</p></div>
+      <div class="pain rv"><i>👀</i><p><b>«Профиль не продаёт»</b>Красивые работы есть, но непонятно, почему записаться именно к тебе.</p></div>
+      <div class="pain rv"><i>🔁</i><p><b>«Начинаю и сливаюсь»</b>Неделю веду блог, потом месяц тишины.</p></div>
     </div>
   </section>
 
+  <!-- Как работает -->
   <section>
-    <div class="head-block rv"><span class="kicker">Что можно настроить</span><h2>Пять помощников <em>для мастера</em></h2><p class="lead">Выбираешь, что нужно именно тебе. Всё настраиваю я, а тебе остаётся пользоваться.</p></div>
+    <div class="head-block rv"><span class="kicker">Как это работает</span><h2>Ты присылаешь — <em>отдел делает</em></h2></div>
+    <div class="flow">
+      <div class="fl rv"><div class="e">📱</div><div><b>1. Кидаешь видео</b><span>С телефона в своего Telegram-бота — как подруге.</span></div></div>
+      <div class="fl dark rv"><div class="e">🤖</div><div><b>2. Агент работает</b><span>На твоём компьютере: монтаж, тексты, карусели.</span></div></div>
+      <div class="fl rv"><div class="e">✅</div><div><b>3. Готово в Telegram</b><span>Смотришь, правишь, если нужно, — одним сообщением.</span></div></div>
+      <div class="fl rv"><div class="e">🗓</div><div><b>4. Выходит само</b><span>Через планировщик — по расписанию, даже когда ты на работе.</span></div></div>
+    </div>
+  </section>
+
+  <!-- Роли отдела -->
+  <section>
+    <div class="head-block rv"><span class="kicker">Кто в твоём отделе</span><h2>Восемь помощников <em>для мастера</em></h2><p class="lead">Набор зависит от пакета. Всё настраиваю я — тебе остаётся пользоваться.</p></div>
 
     <div class="sol rv">
-      <div><span class="num">01</span><h3>Страница услуг <em>с записью</em></h3><p>Одна красивая ссылка в шапке профиля: работы, прайс, адрес и кнопка «Записаться». Клиентка сама всё видит — и ты больше не объясняешь в личке одно и то же.</p>
-        <ul><li>Прайс и фото работ</li><li>Кнопка записи в Telegram или WhatsApp</li><li>Открывается без VPN</li></ul></div>
-      <div class="vis"><div class="phone"><div class="scr"><div class="ph" style="background-image:url(n1.jpg)"></div><div class="bd"><h4>Маникюр с покрытием</h4><div class="row"><span>Маникюр + покрытие</span><b>2 000 ₽</b></div><div class="row"><span>Френч</span><b>2 300 ₽</b></div><div class="row"><span>Дизайн</span><b>от 100 ₽</b></div><div class="bb">Записаться</div></div></div></div></div>
+      <div><div class="num"><i>01</i>Монтажёр</div><h3>Reels <em>из сырого видео</em></h3><p>Присылаешь видео процесса — агент убирает паузы, делает субтитры, режет на короткие ролики и ставит обложку.</p>
+        <ul><li>Паузы и «эээ» — убраны</li><li>Субтитры, чтобы смотрели без звука</li><li>Нарезка на 2–3 ролика из одного видео</li></ul></div>
+      <div class="vis"><div class="chat">
+        <div class="msg out">Вот видео с сегодняшнего френча 💅<div class="raw"><span style="background-image:url(n2.jpg)"></span><span style="background-image:url(n1.jpg)"></span></div><small>18:40</small></div>
+        <div class="msg in"><div class="who2">Твой ИИ-отдел 🤖</div>Готово! 3 Reels: паузы убраны, субтитры добавлены, обложки сделаны 👇<div class="vids"><span style="background-image:url(n2.jpg)"><b>Френч за 2 часа</b></span><span style="background-image:url(n1.jpg)"><b>3 ошибки</b></span><span style="background-image:url(n3.jpg)"><b>Бордо — хит</b></span></div><small>21:05</small></div>
+      </div></div>
     </div>
 
     <div class="sol rev rv">
-      <div><span class="num">02</span><h3>Заявки — <em>сразу в таблицу</em></h3><p>Клиентка выбирает услугу и удобное время в короткой форме. Заявка сама падает в таблицу, а тебе в Telegram приходит уведомление. Ничего не теряется в переписке.</p>
-        <ul><li>Все клиентки и их услуги — в одной таблице</li><li>Уведомление в Telegram за секунду</li><li>Видно, откуда пришла клиентка: Instagram, сарафан, сайт</li></ul>
-        <span class="tag real" style="margin-top:12px">Уже работает у меня — так устроен мой нейро-тест</span></div>
-      <div class="vis" style="flex-direction:column" id="leadbox"></div>
-    </div>
-
-    <div class="sol rv">
-      <div><span class="num">03</span><h3>«Пора на <em>коррекцию</em>»</h3><p>Через 3 недели после визита клиентке приходит тёплое сообщение от твоего бота со свободными окошками. Она нажимает кнопку — и записана. Ты возвращаешь тех, кто просто забыл.</p>
-        <ul><li>Срок напоминания — под твою услугу</li><li>Текст — твоим голосом</li><li>Работает с теми, кто подписан на твоего бота</li></ul></div>
-      <div class="vis"><div class="chat"><div class="msg in"><div class="who2">Бот мастера 💅</div>Ирина, привет! Прошло 3 недели с маникюра — самое время обновить 🤍<br>Свободные окошки на этой неделе:<div class="kb"><span>Чт 15:00</span><span>Пт 11:00</span><span>Сб 13:00</span></div><small>10:02</small></div><div class="msg out">Пт 11:00 👍<small>10:05</small></div><div class="msg in"><div class="who2">Бот мастера 💅</div>Записала тебя на пятницу, 11:00. Накануне напомню ✨<small>10:05</small></div></div></div>
-    </div>
-
-    <div class="sol rev rv">
-      <div><span class="num">04</span><h3>Сарафан и <em>подарочные сертификаты</em></h3><p>У каждой постоянной клиентки — своя ссылка-приглашение для подруги. В таблице видно, кто кого привёл, и ты можешь отблагодарить. А на праздники — красивые электронные сертификаты, которые дарят и пересылают.</p>
-        <ul><li>Личная ссылка «приведи подругу»</li><li>Подарок тому, кто привёл</li><li>Сертификат-открытка с твоим фото и работами</li></ul>
-        <span class="tag real" style="margin-top:12px">Уже работает у меня — личные открытки-подарки</span></div>
-      <div class="vis"><div class="cert"><div class="ph" style="background-image:url(n3.jpg)"></div><div class="bd"><small>Подарочный сертификат</small><b>Маникюр с покрытием</b><div style="font-size:13px;opacity:.9">для Марины — от Оли 🤍</div><span>действует до 31 декабря</span></div></div></div>
-    </div>
-
-    <div class="sol rv">
-      <div><span class="num">05</span><h3>Блог <em>твоим голосом</em></h3><p>Настраиваю ИИ-помощника, который знает твои услуги, цены и стиль. Пишешь ему «пост про уход между визитами» — и через минуту готовый текст. Плюс контент-план на месяц, идеи для Reels и сторис.</p>
-        <ul><li>Посты, сторис и карусели за минуты</li><li>Ответы на частые вопросы клиенток</li><li>Контент-план на месяц</li></ul></div>
+      <div><div class="num"><i>02</i>Копирайтер</div><h3>Тексты <em>твоим голосом</em></h3><p>Помощник знает твои услуги, цены и манеру речи. Пишешь одну фразу — получаешь пост, подпись к Reels или ответ клиентке.</p>
+        <ul><li>Посты, подписи, сторис</li><li>Ответы на частые вопросы</li><li>Без «как робот» — твоими словами</li></ul></div>
       <div class="vis"><div class="post"><div class="ph" style="background-image:url(n2.jpg)"></div><div class="tx" id="ptext"></div></div></div>
     </div>
+
+    <div class="sol rv">
+      <div><div class="num"><i>03</i>Дизайнер</div><h3>Карусели <em>готовыми картинками</em></h3><p>Агент собирает карусель из твоих фото в твоём стиле — сразу файлами, которые остаётся только выложить.</p>
+        <ul><li>Твои фото и цвета</li><li>Текст слайдов — продающий</li><li>Готовые картинки, не «шаблон для доработки»</li></ul></div>
+      <div class="vis"><div class="slides"><div class="sl" style="--img:url(n1.jpg)"><small>1/5</small><b>3 ошибки, из-за которых маникюр скалывается</b><small>листай →</small></div><div class="sl" style="--img:url(n2.jpg)"><small>2/5</small><b>Моешь посуду без перчаток</b><small>химия — враг покрытия</small></div><div class="sl" style="--img:url(n3.jpg)"><small>5/5</small><b>Сохрани и записывайся</b><small>ссылка в профиле</small></div></div></div>
+    </div>
+
+    <div class="sol rev rv">
+      <div><div class="num"><i>04</i>Контент-планер</div><h3>План и <em>дайджест каждое утро</em></h3><p>Контент-план на месяц под твою нишу. А каждое утро в Telegram — что сегодня публикуем и что снять в сторис.</p>
+        <ul><li>План на месяц: посты, Reels, сторис</li><li>Утреннее сообщение «что сегодня»</li><li>Идеи сторис на каждый день</li></ul></div>
+      <div class="vis"><div class="chat"><div class="msg in"><div class="who2">Твой ИИ-отдел 🤖</div>☀️ Доброе утро! Сегодня, вторник:<br>📌 Пост: «Как продлить носку покрытия» — текст готов<br>🎬 Reels: «Френч за 2 часа» — выйдет в 19:00<br>📱 Сторис: покажи рабочее место + опрос «френч или нюд?»<small>09:00</small></div></div></div>
+    </div>
+
+    <div class="sol rv">
+      <div><div class="num"><i>05</i>Публикации</div><h3>Выходит <em>по расписанию</em></h3><p>Готовый контент загружаем в планировщик — и он выходит сам, пока ты работаешь. Через официальный планировщик, без риска для аккаунта.</p>
+        <ul><li>Посты и Reels — по расписанию</li><li>Ты только проверяешь</li><li>Никаких ботов «нажимающих кнопки» в Instagram</li></ul></div>
+      <div class="vis"><div class="cal" id="cal"></div></div>
+    </div>
+
+    <div class="sol rev rv">
+      <div><div class="num"><i>06</i>Упаковка</div><h3>Профиль, <em>который продаёт</em></h3><p>Позиционирование, шапка, актуальные и закрепы — чтобы с первого взгляда было понятно, почему записаться именно к тебе.</p>
+        <ul><li>Кто ты и почему к тебе</li><li>Шапка, актуальные, закрепы</li><li>Ссылка на сайт и запись</li></ul></div>
+      <div class="vis"><div class="prof"><div class="hd"><div class="av2" style="background-image:url(n1.jpg)"></div><div class="st"><span><b>148</b>постов</span><span><b>2 310</b>подписч.</span></div></div><div class="bio"><b>Ирина | маникюр в Пятигорске 💅</b><br>Покрытие, которое держится 3–4 недели<br>Стерильно · уютно · без спешки<br>👇 Запись и прайс</div><div class="hl"><span><i style="background-image:url(n2.jpg)"></i>Работы</span><span><i style="background-image:url(n3.jpg)"></i>Прайс</span><span><i style="background-image:url(n1.jpg)"></i>Отзывы</span><span><i></i>Уход</span></div></div></div>
+    </div>
+
+    <div class="sol rv">
+      <div><div class="num"><i>07</i>Сайт-визитка</div><h3>Одна ссылка <em>на всё</em></h3><p>Работы, прайс, адрес и кнопка «Записаться», которая ведёт в твой DIKIDI или YCLIENTS. Открывается без VPN.</p>
+        <ul><li>Работы и прайс</li><li>Кнопка записи — в твой сервис</li><li>Ссылка в шапке профиля</li></ul>
+        <span class="tag">Так сделаны мои сайты</span></div>
+      <div class="vis"><div class="phone"><div class="scr"><div class="ph" style="background-image:url(n1.jpg)"></div><div class="bd"><h4>Маникюр с покрытием</h4><div class="row"><span>Маникюр + покрытие</span><b>2 000 ₽</b></div><div class="row"><span>Френч</span><b>2 300 ₽</b></div><div class="row"><span>Дизайн</span><b>от 100 ₽</b></div><div class="bb">Записаться</div><div class="sm">откроется твой сервис записи</div></div></div></div></div>
+    </div>
+
+    <div class="sol rev rv">
+      <div><div class="num"><i>08</i>Сарафан</div><h3>Сертификаты <em>и «приведи подругу»</em></h3><p>Красивые электронные сертификаты, которые дарят и пересылают, и личные ссылки для постоянных клиенток — видно, кто кого привёл.</p>
+        <ul><li>Сертификат-открытка с твоими работами</li><li>Ссылка «приведи подругу»</li><li>Таблица: кто кого привёл</li></ul>
+        <span class="tag">Так сделаны мои открытки-подарки</span></div>
+      <div class="vis"><div class="cert"><div class="ph" style="background-image:url(n3.jpg)"></div><div class="bd"><small>Подарочный сертификат</small><b>Маникюр с покрытием</b><div style="font-size:13px;opacity:.9">для Марины — от Оли 🤍</div><span>действует до 31 декабря</span></div></div></div>
+    </div>
   </section>
 
+  <!-- День -->
   <section>
     <div class="day rv">
       <span class="kicker" style="background:rgba(200,22,29,.25);color:#ffb3b6">Как это может работать у тебя</span>
       <h3>Один обычный <em>вторник</em></h3>
       <div class="tl">
-        <div><b>09:00</b><span>Пока ты пьёшь кофе, в Telegram пришли 2 заявки со страницы услуг — уже в таблице.</span></div>
-        <div><b>10:00</b><span>Бот сам написал трём клиенткам «пора на коррекцию». Одна уже записалась.</span></div>
-        <div><b>14:00</b><span>Постоянная клиентка переслала подруге свою ссылку-приглашение.</span></div>
-        <div><b>20:00</b><span>Пишешь помощнику одну фразу — и через минуту готов пост на завтра.</span></div>
+        <div><b>09:00</b><span>В Telegram — что сегодня публикуем и идея для сторис.</span></div>
+        <div><b>13:00</b><span>Между клиентками кидаешь в бота видео процесса — 30 секунд.</span></div>
+        <div><b>19:00</b><span>Вчерашний Reels вышел сам по расписанию.</span></div>
+        <div><b>21:00</b><span>Агент прислал 3 готовых ролика и карусель. Смотришь, ставишь в план.</span></div>
       </div>
-      <div class="script">Ты делаешь маникюр — остальное помогает нейросеть.</div>
+      <div class="script">Ты делаешь маникюр — блог делает твой ИИ-отдел.</div>
     </div>
   </section>
 
+  <!-- Честно -->
   <section>
-    <div class="head-block rv"><span class="kicker">Как проходит</span><h2>Три шага — <em>и всё работает</em></h2></div>
+    <div class="head-block rv"><span class="kicker">Честно о главном</span><h2>Что нужно <em>с твоей стороны</em></h2></div>
+    <div class="honest">
+      <div class="rv"><b>💻 Компьютер</b>Агент работает на твоём компьютере — он должен быть включён, когда отдел «на смене» (например, вечером).</div>
+      <div class="rv"><b>🤖 Подписка на нейросеть</b>Агенту нужна платная подписка Claude — около 20 $ в месяц. Помогу оформить.</div>
+      <div class="rv"><b>🗓 Публикации</b>Через официальный планировщик. Ты всегда видишь, что и когда выйдет.</div>
+      <div class="rv"><b>💅 Запись</b>Остаётся в твоём сервисе. Я не меняю твою систему записи — я делаю так, чтобы в неё приходили.</div>
+    </div>
+  </section>
+
+  <!-- Пакеты -->
+  <section id="packs">
+    <div class="head-block rv"><span class="kicker">Пакеты</span><h2>Выбери <em>свой отдел</em></h2></div>
+    <div class="packs">
+      <div class="pk rv">
+        <h3>Старт</h3>
+        <div class="pr">10 000 ₽</div><div class="later">для первых 5 клиентов · далее 30 000 ₽</div>
+        <ul><li>Упаковка профиля: позиционирование, шапка, актуальные, закрепы</li><li>Сайт-визитка с кнопкой записи в твой сервис</li><li>ИИ-помощник твоим голосом в чате</li></ul>
+      </div>
+      <div class="pk rv">
+        <h3>Контент</h3>
+        <div class="pr">15 000 ₽</div><div class="later">для первых 5 клиентов · далее 35 000 ₽</div>
+        <ul><li class="plus">Всё из «Старта»</li><li>Контент-план на месяц</li><li>Ежедневный дайджест в Telegram: что публикуем и что снять в сторис</li><li>Сертификаты и «приведи подругу»</li></ul>
+      </div>
+      <div class="pk hit rv"><span class="badge">Полный отдел</span>
+        <h3>ИИ-отдел</h3>
+        <div class="pr">25 000 ₽</div><div class="later">для первых 5 клиентов · далее 45 000 ₽</div>
+        <ul><li class="plus">Всё из «Контента»</li><li>Агент на твоём компьютере</li><li>Монтаж Reels: паузы, субтитры, нарезка, обложки</li><li>Карусели готовыми картинками</li><li>Telegram-бот: присылаешь видео — получаешь готовое</li><li>Публикации по расписанию через планировщик</li></ul>
+      </div>
+    </div>
+    <div class="first rv">🔥 Цены для первых пяти клиентов — честно только для первых пяти. Дальше пакеты стоят 30 / 35 / 45 тысяч.</div>
+  </section>
+
+  <!-- Как проходит -->
+  <section>
+    <div class="head-block rv"><span class="kicker">Как проходит</span><h2>Три шага — <em>и отдел работает</em></h2></div>
     <div class="how">
-      <div class="rv"><i>1</i><div><b>Созвон</b><span>Разбираем твою работу и выбираем, что нужно именно тебе.</span></div></div>
-      <div class="rv"><i>2</i><div><b>Настраиваю сама</b><span>Ты занимаешься клиентками — я собираю и проверяю всё под тебя.</span></div></div>
+      <div class="rv"><i>1</i><div><b>Созвон</b><span>Разбираем твою работу, блог и выбираем пакет.</span></div></div>
+      <div class="rv"><i>2</i><div><b>Настраиваю сама</b><span>Ты работаешь с клиентками — я собираю и проверяю твой отдел.</span></div></div>
       <div class="rv"><i>3</i><div><b>Готово + инструкция</b><span>Показываю, как пользоваться, простым языком. Без «я чайник».</span></div></div>
     </div>
   </section>
 
-  <section id="go">
+  <section>
     <div class="final rv">
       <div class="me"><img src="../../hero.jpg" alt="Антонина Алдатова"><p><b>Антонина Алдатова</b>17 лет мастер маникюра и 5 лет — владелица своего салона. Дипломированный маркетолог социальных сетей с 2017 года. Знаю твою работу изнутри.</p></div>
-      <span class="kicker">Настройка под ключ</span>
-      <div class="price">от 10 000 ₽</div>
-      <p class="lead" style="font-size:15.5px">Точная стоимость — после короткого созвона: зависит от того, что выберешь.</p>
-      <div style="margin-top:20px"><a class="btn" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Написать мне «МАНИКЮР» <span>→</span></a></div>
-      <p class="muted">Отвечу лично и расскажу, с чего лучше начать именно тебе.</p>
+      <h2>Соберём <em>твой отдел?</em></h2>
+      <div style="margin-top:16px"><a class="btn" href="https://t.me/antonina_aldatova" target="_blank" rel="noopener">Написать мне «МАНИКЮР» <span>→</span></a></div>
+      <p class="muted">Отвечу лично и подскажу, какой пакет подойдёт именно тебе.</p>
     </div>
   </section>
 </div>
-<footer>Антонина Алдатова · нейросети и блог для мастеров · КМВ<br>Фото работ — для примера</footer>
+<footer>Антонина Алдатова · маркетолог и продюсер · КМВ<br>Фото работ и примеры — для иллюстрации</footer>
 
 <script>
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-  // 02: заявки
-  const box = document.getElementById('leadbox');
-  box.innerHTML = '<div id="nt"></div><div class="tbl"><div class="h"><span>Клиентка</span><span>Услуга</span><span>Откуда</span></div><div id="rows"></div></div>';
-  const L = [['Ирина','Френч','Instagram'],['Алина','Маникюр + покрытие','Сарафан'],['Ольга','Дизайн','Сайт'],['Вика','Коррекция','Бот']];
-  let k = 0;
-  function addLead(){
-    const p = L[k % L.length]; k++;
-    document.getElementById('nt').innerHTML = '<div class="notif"><div class="ic">🔔</div><div><b>Новая запись</b><p>' + p[0] + ' · ' + p[1] + ' · ' + p[2] + '</p></div></div>';
-    const rows = document.getElementById('rows');
-    rows.insertAdjacentHTML('afterbegin', '<div class="new"><span>' + p[0] + '</span><span>' + p[1] + '</span><span>' + p[2] + '</span></div>');
-    if (rows.children.length > 3) rows.lastElementChild.remove();
-  }
-  addLead(); setInterval(addLead, 2800);
-
-  // 05: пост печатается
   const T = 'Почему покрытие держится 3 недели у одних и скалывается через неделю у других? 💅\n\n1. Перчатки при уборке.\n2. Масло для кутикулы каждый вечер.\n3. Ногти — не инструмент: никаких «открою крышечку».\n\nСохрани и напиши «ХОЧУ» — пришлю памятку по уходу 🤍';
   const pt = document.getElementById('ptext'); let started = false;
   new IntersectionObserver(es => { if (es[0].isIntersecting && !started) { started = true; let i = 0; const t = setInterval(() => { pt.textContent = T.slice(0, i += 3); if (i >= T.length) clearInterval(t); }, 28); } }, {threshold:.4}).observe(pt);
+
+  const d = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+  const t = ['Reels: френч','Пост: уход','Карусель: ошибки','Reels: бордо','Сторис: окошки','Пост: отзыв','Отдых'];
+  document.getElementById('cal').innerHTML = t.map((x,i) => '<span class="' + (i < 6 ? 'ok' : '') + '"><b>' + d[i] + '</b>' + x + '</span>').join('');
 </script>
 </body>
 </html>
